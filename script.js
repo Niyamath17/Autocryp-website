@@ -40,3 +40,72 @@ function revertBack(){
   document.getElementById("chngetext2").innerHTML = "Per Month";
   document.getElementById("chngetext3").innerHTML = "Per Month";
 }
+
+function dotOne(){
+  document.getElementById("dot1").className = "dotlinks active-card";
+  document.getElementById("dot2").className = "dotlinks";
+  document.getElementById("dot3").className = "dotlinks";
+  document.getElementById("dot4").className = "dotlinks";
+  document.getElementById("dot5").className = "dotlinks";
+  document.getElementById("card1").className = "carousle-cards active-card";
+  document.getElementById("card2").className = "carousle-cards";
+  document.getElementById("card3").className = "carousle-cards";
+  document.getElementById("card4").className = "carousle-cards";
+  document.getElementById("card5").className = "carousle-cards";
+  document.getElementById("cardsall").className = "carousleslide-items";
+}
+
+function dotTwo(){
+  document.getElementById("dot1").className = "dotlinks";
+  document.getElementById("dot2").className = "dotlinks active-card";
+  document.getElementById("dot3").className = "dotlinks";
+  document.getElementById("dot4").className = "dotlinks";
+  document.getElementById("dot5").className = "dotlinks";
+  document.getElementById("card1").className = "carousle-cards";
+  document.getElementById("card2").className = "carousle-cards active-card";
+  document.getElementById("card3").className = "carousle-cards";
+  document.getElementById("card4").className = "carousle-cards";
+  document.getElementById("card5").className = "carousle-cards";
+  document.getElementById("cardsall").className = "carousleslide-items";
+}
+
+function dotThree(){
+  document.getElementById("dot1").className = "dotlinks";
+  document.getElementById("dot2").className = "dotlinks";
+  document.getElementById("dot3").className = "dotlinks active-card";
+  document.getElementById("dot4").className = "dotlinks";
+  document.getElementById("dot5").className = "dotlinks";
+  document.getElementById("card1").className = "carousle-cards";
+  document.getElementById("card2").className = "carousle-cards";
+  document.getElementById("card3").className = "carousle-cards active-card";
+  document.getElementById("card4").className = "carousle-cards";
+  document.getElementById("card5").className = "carousle-cards";
+}
+
+function dotFour(){
+  document.getElementById("dot1").className = "dotlinks";
+  document.getElementById("dot2").className = "dotlinks";
+  document.getElementById("dot3").className = "dotlinks";
+  document.getElementById("dot4").className = "dotlinks active-card";
+  document.getElementById("dot5").className = "dotlinks";
+  document.getElementById("card1").className = "carousle-cards";
+  document.getElementById("card2").className = "carousle-cards";
+  document.getElementById("card3").className = "carousle-cards";
+  document.getElementById("card4").className = "carousle-cards active-card";
+  document.getElementById("card5").className = "carousle-cards";
+  document.getElementById("cardsall").className = "carousleslide-items4";
+}
+
+function dotFive(){
+  document.getElementById("dot1").className = "dotlinks";
+  document.getElementById("dot2").className = "dotlinks";
+  document.getElementById("dot3").className = "dotlinks";
+  document.getElementById("dot4").className = "dotlinks";
+  document.getElementById("dot5").className = "dotlinks active-card";
+  document.getElementById("card1").className = "carousle-cards";
+  document.getElementById("card2").className = "carousle-cards";
+  document.getElementById("card3").className = "carousle-cards";
+  document.getElementById("card4").className = "carousle-cards";
+  document.getElementById("card5").className = "carousle-cards active-card";
+  document.getElementById("cardsall").className = "carousleslide-items4";
+}

@@ -385,12 +385,19 @@ a {
   margin-top: 23px;
 }
 .carousleslide-items {
-  margin-left: auto;
   white-space: nowrap;
+  margin-left: 21px;
   width: 70%;
   height: 100%;
-  overflow: hidden;
 }
+
+.carousleslide-items4 {
+  white-space: nowrap;
+  margin-left: -789px;
+  width: 70%;
+  height: 100%;
+}
+
 .active-card {
   background-color: #1fdb84;
 }
