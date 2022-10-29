@@ -9,281 +9,360 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
     <link rel="icon" href="siteimages/favicon.jpg" type="image/x-icon">
     <title>Autocryp</title>
 </head>
 
 <body>
-    <header class="header" id="nav">
-        <nav class="navbar container">
-            <a href="javascript:void(0)" class="brand-logo">autocryp</a>
-            <ul class="nav-menu">
-                <li class="nav-items"><a href="javascript:void(0)" class="paragraph-md nav-links">Benefit</a></li>
-                <li class="nav-items"><a href="javascript:void(0)" class="paragraph-md nav-links">Pricing</a></li>
-                <li class="nav-items"><a href="javascript:void(0)" class="paragraph-md nav-links">Testimonials</a></li>
-                <li class="nav-items"><a href="javascript:void(0)" class="paragraph-md nav-links">Client</a></li>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- autocryp -->
+            <a href="javascript:void(0)" class="nav__left">
+                <span class="fw-700 font-24 color-white">autocryp</span>
+            </a>
+
+            <ul class="nav__center mobile-hide">
+                <li><a href="javascript:void(0)" class="color-white link">Benefit</a></li>
+                <li><a href="javascript:void(0)"  class="color-white link">Pricing</a></li>
+                <li><a href="javascript:void(0)" class="color-white link">Testimonials</a></li>
+                <li><a href="javascript:void(0)" class="color-white link">Client</a></li>
             </ul>
 
-            <ul class="nav-right">
-                <li class="nav-items"><a href="javascript:void(0)" class="paragraph-md nav-links">Login</a></li>
-                <li class="nav-items"><a href="javascript:void(0)" class="paragraph-md btn btn-sm">Register</a></li>
+            <ul class="nav__right mobile-hide">
+                <li>
+                    <a href="javascript:void(0)" class=" color-white link">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <button class="btn btn--sm" id="navRegister">
+                        Register
+                    </button></li>
             </ul>
-            <div class="ham-button">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+
+            <a href="javascript:void(0)" class="nav__right desktop-hide" id="hamburger">
+                <svg class="hamburger">
+                    <use href="./dist/image.svg#icon-menu"></use>
+                </svg>
+            </a>
+
         </nav>
-
-        <div class="mobile-nav">
-            <ul class="mobile-menu">
-                <li class=""><a href="javascript:void(0)" class="paragraph-md nav-links">Benefit</a></li>
-                <li class=""><a href="javascript:void(0)" class="paragraph-md nav-links">Pricing</a></li>
-                <li class=""><a href="javascript:void(0)" class="paragraph-md nav-links">Testimonials</a></li>
-                <li class=""><a href="javascript:void(0)" class="paragraph-md nav-links">Client</a></li>
-                <li class=""><a href="javascript:void(0)" class="paragraph-md nav-links">Login</a></li>
-                <li class=""><a href="javascript:void(0)" class="paragraph-md btn btn-sm">Register</a></li>
-            </ul>
-        </div>
     </header>
+
+
 
     <main>
         <section class="hero">
-            <div class="container hero-content">
-                <div class="bitcoins">
-                    <h1 class="heading-xl hero-heading">Easiest way to mining your bitcoin</h1>
-                    <p class="paragraph-md hero-para">Autocryp is the place to buy and sell Bitcoin, Ethereum and
-                        various kinds of Digital Assets in Indonesia. Then, book your weekly, bi-weekly or one-off clean
-                        online with imminent confirmation.</p>
-                    <a href="javascript:void(0)" class="btn btn-lg hero-btn">Get Started</a>
-                </div>
+            <div class="container fs-reset">
+                <article class="hero__content va-top">
+                    <h1 class="font-48 hero__heading color-white m-b-10">Easiest way to
+                        mining your bitcoin</h1>
+                    <p class="font-16 hero__body color-white m-b-10">Autocryp is the place to buy and sell Bitcoin,
+                        Ethereum and
+                        various kinds of Digital Assets in Indonesia. Then, book your weekly, bi-weekly or
+                        one-off clean online with imminent confirmation.</p>
+                    <a href="javascript:void(0)" class="btn btn--lg" id="getStartedButton">Get Started</a>
+                </article>
 
-                <figure class="hero-image">
-                    <img src="siteimages/mobile-in-hand.png" alt="mobileinhand">
-                </figure>
+                <div class="hero__image va-top mobile-hide"> </div>
             </div>
         </section>
 
-        <section class="characters">
-            <div class="characters-contain container">
-                <div class="characters-cards">
-                    <div class="characters-logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="34" viewBox="0 0 40 34">
-                            <path fill="#1FDB84" fill-rule="nonzero"
-                                d="M28 16.2h3.919a7.2 7.2 0 1 1 0-1.6H28a.8.8 0 1 0 0 1.6zM40 2.6v25.6a2.4 2.4 0 0 1-2.4 2.4h-.8v1.6a1.6 1.6 0 0 1-1.6 1.6H32a1.6 1.6 0 0 1-1.6-1.6v-1.6H9.6v1.6A1.6 1.6 0 0 1 8 33.8H4.8a1.6 1.6 0 0 1-1.6-1.6v-1.6h-.8A2.4 2.4 0 0 1 0 28.2V2.6A2.4 2.4 0 0 1 2.4.2h35.2A2.4 2.4 0 0 1 40 2.6zm-32 28H4.8v1.6H8v-1.6zM8 5.8a.8.8 0 1 0-1.6 0v2.4h-.8a.8.8 0 1 0 0 1.6h.8v4.8h-.8a.8.8 0 1 0 0 1.6h.8V21h-.8a.8.8 0 1 0 0 1.6h.8V25A.8.8 0 1 0 8 25V5.8zm25.6 9.6a8.8 8.8 0 1 0-17.6 0 8.8 8.8 0 0 0 17.6 0zm1.6 15.2H32v1.6h3.2v-1.6z" />
+        <section class="features" id="benefit">
+            <div class="container--lg p-t-12 p-b-12">
+
+                <!-- feature 1 -->
+                <div class="feature">
+                    <!-- svg -->
+                    <div class="feature__svgBox">
+                        <svg class="feature__svg">
+                            <use href="./dist/image.svg#secure"></use>
                         </svg>
                     </div>
-                    <h4 class="characters-heading paragraph-lg fnt-fm-chge">Secure Every Transaction</h4>
-                    <p class="paragraph-md fnt-clrchge characters-para">Your account is protected by Multifactor
-                        Authentication using a combination of email, SMS and Google Authenticator.</p>
+                    <h1 class="feature__heading">
+                        Secure Every Transation
+                    </h1>
+                    <p class="feature__body font-16 color-slate-blue">
+                        Your account is protected by Multifactor Authentication using a combination of email, SMS
+                        and Google Authenticator.
+                    </p>
                 </div>
-                <div class="characters-cards">
-                    <div class="characters-logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="26" viewBox="0 0 39 26">
-                            <path fill="#1FDB84" fill-rule="nonzero"
-                                d="M39 12a5.972 5.972 0 0 1-.534 2.4H1.134a5.657 5.657 0 0 1 0-4.8h37.332c.342.754.524 1.572.534 2.4zM2.076 16h35.448c-2.894 3.758-9.738 6.4-17.724 6.4a34.307 34.307 0 0 1-5.897-.503L11.8 24H1.4a.8.8 0 1 1 0-1.6h2.4l2.139-3.209A12.754 12.754 0 0 1 2.076 16zm5.301 3.92L5.723 22.4h5.414l.895-.895a25.213 25.213 0 0 1-4.655-1.586zM27 24h-6.4a.8.8 0 1 0 0 1.6H27a.8.8 0 1 0 0-1.6zM.6.8a.8.8 0 0 1 .8-.8h10.4l2.103 2.103A34.307 34.307 0 0 1 19.8 1.6c7.986 0 14.83 2.642 17.724 6.4H2.076A12.754 12.754 0 0 1 5.94 4.809L3.8 1.6H1.4A.8.8 0 0 1 .6.8zm5.123.8l1.654 2.48a25.213 25.213 0 0 1 4.655-1.586l-.895-.894H5.723z" />
+
+                <!-- feature 2 -->
+                <div class="feature">
+                    <!-- svg -->
+                    <div class="feature__svgBox">
+                        <svg class="feature__svg">
+                            <use href="./dist/image.svg#easytouse"></use>
                         </svg>
                     </div>
-                    <h4 class="characters-heading paragraph-lg fnt-fm-chge">Easiest To Use</h4>
-                    <p class=" paragraph-md fnt-clrchge characters-para">You only need 1 account to do all Bitcoin
-                        transactions whether it is buying, selling, investing or trading.</p>
+                    <h1 class="feature__heading">
+                        Easiest To Use
+                    </h1>
+                    <p class="feature__body font-16 color-slate-blue">
+                        You only need 1 account to do all Bitcoin transactions whether it is buying, selling,
+                        investing or trading.
+                    </p>
                 </div>
-                <div class="characters-cards">
-                    <div class="characters-logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="26" viewBox="0 0 39 26">
-                            <path fill="#1FDB84" fill-rule="nonzero"
-                                d="M39 12a5.972 5.972 0 0 1-.534 2.4H1.134a5.657 5.657 0 0 1 0-4.8h37.332c.342.754.524 1.572.534 2.4zM2.076 16h35.448c-2.894 3.758-9.738 6.4-17.724 6.4a34.307 34.307 0 0 1-5.897-.503L11.8 24H1.4a.8.8 0 1 1 0-1.6h2.4l2.139-3.209A12.754 12.754 0 0 1 2.076 16zm5.301 3.92L5.723 22.4h5.414l.895-.895a25.213 25.213 0 0 1-4.655-1.586zM27 24h-6.4a.8.8 0 1 0 0 1.6H27a.8.8 0 1 0 0-1.6zM.6.8a.8.8 0 0 1 .8-.8h10.4l2.103 2.103A34.307 34.307 0 0 1 19.8 1.6c7.986 0 14.83 2.642 17.724 6.4H2.076A12.754 12.754 0 0 1 5.94 4.809L3.8 1.6H1.4A.8.8 0 0 1 .6.8zm5.123.8l1.654 2.48a25.213 25.213 0 0 1 4.655-1.586l-.895-.894H5.723z" />
+
+                <!-- feature 3 -->
+                <div class="feature">
+                    <!-- svg -->
+                    <div class="feature__svgBox">
+                        <svg class="feature__svg">
+                            <use href="./dist/image.svg#fast"></use>
                         </svg>
                     </div>
-                    <h4 class="characters-heading paragraph-lg fnt-fm-chge">Fastest Mining</h4>
-                    <p class="paragraph-md fnt-clrchge characters-para">The Rupiah deposit can be processed instantly
-                        and Rupiah withdrawal is processed in less than 1 business day.</p>
+                    <h1 class="feature__heading">
+                        Fastest Mining
+                    </h1>
+                    <p class="feature__body font-16 color-slate-blue">
+                        The Rupiah deposit can be processed instantly and Rupiah withdrawal is processed in less
+                        than 1 business day.
+                    </p>
                 </div>
             </div>
+
         </section>
 
-        <section class="plan-details">
+        <section class="price p-t-50 p-b-50">
             <div class="container">
-                <h2 class="heading-lg plan-details__heading">Paid plan starts with a 7-day free trial, <br> No credit
-                    card required</h2>
-                <div class="plan-details__plans">
-                    <a href="javascript:void(0)" class="monthly brd-l-5" onclick="revertBack()">MONTHLY</a>
-                    <a href="javascript:void(0)" class="monthly brd-r-5" onclick="changeText()">YEARLY - 2 MONTH
-                        FREE</a>
+                <h2 class="fw-700 font-40 m-auto m-b-15 ta-c price__heading">Paid plan starts with a 7-day free trial,
+                    No credit card
+                    required</h2>
+                <div class="btn-group m-auto m-b-15">
+                    <button href="javascript:void(0)" class="btn btn--sm btn--active" id="monthly">monthly</button>
+                    <button href="javascript:void(0)" class="btn btn--sm" id="yearly">yearly - 2 month free</button>
                 </div>
 
-                <div class="cards">
-                    <div class="card-items">
-                        <h3 class="heading-sm">Starter</h3>
-                        <p class="card-price " id="chngeprice1">$10</p>
-                        <p class="paragraph-md  fnt-clrchge " id="chngetext1">Per Month</p>
-                        <ul class="card-lists">
-                            <li class="paragraph-md fnt-clrchge card-lists__items">1 Pixel ID*</li>
-                            <li class="paragraph-md fnt-clrchge card-lists__items">URL</li>
-                            <li class="paragraph-md fnt-clrchge card-lists__items">Up to 200 shortened links / month
-                            </li>
+                <div class="price__cards" id="monthlyCards">
+                    <!-- card 1 -->
+                    <div class="card p-t-12 p-b-12">
+                        <p class="heading font-24 m-b-7">Starter</p>
+                        <p class="card__price m-b-3" id="cardPrice1">$10</p>
+                        <p class="card__smallText m-b-15">Per Month</p>
+
+                        <ul class="card__list m-b-15">
+                            <li>1 Pixel ID*</li>
+                            <li>URL</li>
+                            <li>Up to 200 shortened links / month</li>
                         </ul>
-                        <a href="javascript:void(0);" class="btn btn-elg mr-t-50">START FREE TRIAL</a>
+                        <a href="javascript:void(0)" class="btn btn--long card__btn">START FREE
+                            TRIAL</a>
                     </div>
-                    <div class="card-items active">
-                        <h3 class="heading-sm">Professional</h3>
-                        <p class="card-price" id="chngeprice2">$29</p>
-                        <p class="paragraph-md fnt-clrchge" id="chngetext2">Per Month</p>
-                        <ul class="card-lists">
-                            <li class="paragraph-md fnt-clrchge card-lists__items">5 Pixels ID*</li>
-                            <li class="paragraph-md fnt-clrchge card-lists__items">1 Custom URL</li>
-                            <li class="paragraph-md fnt-clrchge card-lists__items">Up to 1,000 shortened links / month
-                            </li>
-                            <li class="paragraph-md fnt-clrchge card-lists__items">5 Team Member</li>
+                    <!-- card 2 -->
+                    <div class="card card--best p-t-12 p-b-12">
+                        <p class="heading font-24 m-b-7">Professional</p>
+                        <p class="card__price m-b-3" id="cardPrice2">$29</p>
+                        <p class="card__smallText m-b-15">Per Month</p>
+
+                        <ul class="card__list m-b-15">
+                            <li>5 Pixel ID*</li>
+                            <li>1 Custom URL</li>
+                            <li>Up to 1000 shortened links / month</li>
+                            <li>5 Team Member</li>
                         </ul>
-                        <a href="javascript:void(0);" class="btn btn-elg mr-t-50">START FREE TRIAL</a>
+                        <a href="javascript:void(0)" class="btn btn--long card__btn">START FREE TRIAL</a>
                     </div>
-                    <div class="card-items">
-                        <h3 class="heading-sm">Business</h3>
-                        <p class="card-price" id="chngeprice3">$49</p>
-                        <p class="paragraph-md fnt-clrchge" id="chngetext3">Per Month</p>
-                        <ul class="card-lists">
-                            <li class="paragraph-md fnt-clrchge card-lists__items">Unlimited Pixels ID</li>
-                            <li class="paragraph-md fnt-clrchge card-lists__items">Unlimited Custom URL</li>
-                            <li class="paragraph-md fnt-clrchge card-lists__items">Unlimited shortened links / month
-                            </li>
-                            <li class="paragraph-md fnt-clrchge card-lists__items">Unlimited Member</li>
+                    <!-- card 3 -->
+                    <div class="card p-t-12 p-b-12">
+                        <p class="heading font-24 m-b-7">Business</p>
+                        <p class="card__price m-b-3" id="cardPrice3">$49</p>
+                        <p class="card__smallText m-b-15">Per Month</p>
+
+                        <ul class="card__list m-b-15">
+                            <li>Unlimited Pixel ID*</li>
+                            <li>Unlimited Custom URL</li>
+                            <li>Unlimited shortened links / month</li>
+                            <li>Unlimited Member</li>
                         </ul>
-                        <a href="javascript:void(0);" class="btn btn-elg mr-t-50">START FREE TRIAL</a>
+                        <a href="javascript:void(0)" class="btn btn--long card__btn">START FREE TRIAL</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="carousle">
-            <div class="carousle-items">
-                <div class="caroulse-image ">
-                    <h2 class="heading-lg  image-text">What Customers Say</h2>
+        <section class="carousel">
+            <div class="container--edge">
+                <div class="carousel__quote">
+                    <p class="font-40 carousel__heading">What Customers Say</p>
                 </div>
-                <ul id="cardsall" class="carousleslide-items">
-                    <li id="card1" class="carousle-cards active-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="40" viewBox="0 0 49 40">
-                            <g fill="#1fdb84" fill-rule="evenodd">
-                                <path d="M0 0h18v18.947L0 40zM31 0h18v18.947L31 40z" />
-                            </g>
+                <ul class="carousel__list" id="carouselList">
+                    <li class="carousel__slide slide--active" id="1">
+                        <svg class="carousel__slideQuote" width="40px" height="40px">
+                            <use href="./dist/image.svg#quote" width="40px" height="40px"></use>
                         </svg>
-                        <p class="paragraph-lg card-text">
-                            "I wanted something where I could meet new people and get out of the house. Uber has helped
-                            with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
-                        </p>
-                        <p class="paragraph-lg author-name">Brandon Roger / <span class="paragraph-lg">OWW
-                                Studio</span>
-                        </p>
-
+                        <figure>
+                            <blockquote class="carousel__body">"I started driving with Uber because I liked the idea
+                                that my own car could make me money. After just about a couple weeks, I saw that this
+                                was something I wanted to do permanently."</blockquote>
+                            <figcaption class="carousel__auth">Brandon Roger / <span>OWW Studio</span></figcaption>
+                        </figure>
                     </li>
-
-                    <li id="card2" class="carousle-cards">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="40" viewBox="0 0 49 40">
-                            <g fill="#1fdb84" fill-rule="evenodd">
-                                <path d="M0 0h18v18.947L0 40zM31 0h18v18.947L31 40z" />
-                            </g>
+                    <li class="carousel__slide">
+                        <svg class="carousel__slideQuote" width="40px" height="40px">
+                            <use href="./dist/image.svg#quote" width="40px" height="40px"></use>
                         </svg>
-                        <p class="paragraph-lg card-text">
-                            "I wanted something where I could meet new people and get out of the house. Uber has helped
-                            with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
-                        </p>
-                        <p class="paragraph-lg author-name">Sean Walker / <span class="paragraph-lg">OWW Studio</span>
-                        </p>
-
+                        <figure>
+                            <blockquote class="carousel__body">"I wanted something where I could meet new people and get
+                                out of the house. Uber has helped with both of those things, plus I’m seeing new parts
+                                of the city I’ve never seen before!"</blockquote>
+                            <figcaption class="carousel__auth">Sean Walker /<span> OWW Studio</span></figcaption>
+                        </figure>
                     </li>
-                    <li  id="card3" class="carousle-cards">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="40" viewBox="0 0 49 40">
-                            <g fill="#1fdb84" fill-rule="evenodd">
-                                <path d="M0 0h18v18.947L0 40zM31 0h18v18.947L31 40z" />
-                            </g>
+                    <li class="carousel__slide">
+                        <svg class="carousel__slideQuote" width="40px" height="40px">
+                            <use href="./dist/image.svg#quote" width="40px" height="40px"></use>
                         </svg>
-                        <p class="paragraph-lg card-text">
-                            "I wanted something where I could meet new people and get out of the house. Uber has helped
-                            with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
-                        </p>
-                        <p class="paragraph-lg author-name">Brandon Roger / <span class="paragraph-lg">OWW Studio</span>
-                        </p>
-
+                        <figure>
+                            <blockquote class="carousel__body">"This carousel was made using plain Javascript"
+                            </blockquote>
+                            <figcaption class="carousel__auth">Kailash /<span> OWW Studio</span></figcaption>
+                        </figure>
                     </li>
-                    <li  id="card4" class="carousle-cards">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="40" viewBox="0 0 49 40">
-                            <g fill="#1fdb84" fill-rule="evenodd">
-                                <path d="M0 0h18v18.947L0 40zM31 0h18v18.947L31 40z" />
-                            </g>
+                    <li class="carousel__slide">
+                        <svg class="carousel__slideQuote" width="40px" height="40px">
+                            <use href="./dist/image.svg#quote" width="40px" height="40px"></use>
                         </svg>
-                        <p class="paragraph-lg card-text">
-                            "I wanted something where I could meet new people and get out of the house. Uber has helped
-                            with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
-                        </p>
-                        <p class="paragraph-lg author-name">Sean Walker / <span class="paragraph-lg">OWW Studio</span>
-                        </p>
-
+                        <figure>
+                            <blockquote class="carousel__body">"I started driving with Uber because I liked the idea
+                                that my own car could make me money. After just about a couple weeks, I saw that this
+                                was something I wanted to do permanently."</blockquote>
+                            <figcaption class="carousel__auth">Brandon Roger / <span>OWW Studio</span></figcaption>
+                        </figure>
                     </li>
-                    <li id="card5" class="carousle-cards">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="40" viewBox="0 0 49 40">
-                            <g fill="#1fdb84" fill-rule="evenodd">
-                                <path d="M0 0h18v18.947L0 40zM31 0h18v18.947L31 40z" />
-                            </g>
+                    <li class="carousel__slide">
+                        <svg class="carousel__slideQuote" width="40px" height="40px">
+                            <use href="./dist/image.svg#quote" width="40px" height="40px"></use>
                         </svg>
-                        <p class="paragraph-lg card-text">
-                            "I wanted something where I could meet new people and get out of the house. Uber has helped
-                            with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
-                        </p>
-                        <p class="paragraph-lg author-name">Brandon Roger / <span class="paragraph-lg">OWW Studio</span>
-                        </p>
-
+                        <figure>
+                            <blockquote class="carousel__body">"I started driving with Uber because I liked the idea
+                                that my own car could make me money. After just about a couple weeks, I saw that this
+                                was something I wanted to do permanently."</blockquote>
+                            <figcaption class="carousel__auth">Brandon Roger / <span>OWW Studio</span></figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <svg class="carousel__slideQuote" width="40px" height="40px">
+                            <use href="./dist/image.svg#quote" width="40px" height="40px"></use>
+                        </svg>
+                        <figure>
+                            <blockquote class="carousel__body">"I started driving with Uber because I liked the idea
+                                that my own car could make me money. After just about a couple weeks, I saw that this
+                                was something I wanted to do permanently."</blockquote>
+                            <figcaption class="carousel__auth">Brandon Roger / <span>OWW Studio</span></figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <svg class="carousel__slideQuote" width="40px" height="40px">
+                            <use href="./dist/image.svg#quote" width="40px" height="40px"></use>
+                        </svg>
+                        <figure>
+                            <blockquote class="carousel__body">"I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."</blockquote>
+                            <figcaption class="carousel__auth">Brandon Roger / <span>OWW Studio</span></figcaption>
+                        </figure>
                     </li>
                 </ul>
-                <div class="caroulse-slidedots">
-                    <a href="javascript:void(0);" class="dotlinks active-card" id="dot1" onclick="dotOne()"></a>
-                    <a href="javascript:void(0);" class="dotlinks" id="dot2" onclick="dotTwo()"></a>
-                    <a href="javascript:void(0);" class="dotlinks" id="dot3" onclick="dotThree()"></a>
-                    <a href="javascript:void(0);" class="dotlinks" id="dot4" onclick="dotFour()"></a>
-                    <a href="javascript:void(0);" class="dotlinks" id="dot5" onclick="dotFive()"></a>
-                </div>
-            </div>
-        </section>
 
-        <section class="other-platforms container">
-            <p class="other-platforms__heading">WORKS WITH ANY PLATFORM</p>
-            <div class="other-platforms__logos">
-                <svg class="mg-right mg-top" width="138" height="41">
-                    <use href="sitesvg/amazon.svg#amazon"></use>
-                </svg>
-                <svg class="mg-right mg-top" width="88" height="49">
-                    <use href="sitesvg/Etsy.svg#Etsy"></use>
-                </svg>
-                <svg class="mg-right mg-top" width="152" height="29">
-                    <use href="sitesvg/clickbank.svg#clickbank"></use>
-                </svg>
-                <svg class="mg-right mg-top" width="58" height="49">
-                    <use href="sitesvg/N.svg#N"></use>
-                </svg>
-                <svg class="mg-right mg-top" width="139" height="31">
-                    <use href="sitesvg/youtube.svg#youtube"></use>
-                </svg>
-                <svg class="mg-right mg-top" width="227" height="27">
-                    <use href="sitesvg/kigsmaster.svg#kigsmaster"></use>
-                </svg>
+                <div class="carousel__buttons">
+                    <a href="javascript:void(0)" data-slide="0" class="page__link page__link--active"></a>
+                    <a href="javascript:void(0)" data-slide="1" class="page__link"></a>
+                    <a href="javascript:void(0)" data-slide="2" class="page__link"></a>
+                    <a href="javascript:void(0)" data-slide="3" class="page__link"></a>
+                    <a href="javascript:void(0)" data-slide="4" class="page__link"></a>
+                </div>
+
             </div>
         </section>
     </main>
 
+    <section class="clients p-t-50">
+        <p class="heading color-marine ta-c m-b-12">WORKS WITH ANY PLATFORM</p>
+        <div class="wd-fc fs-reset ta-c m-auto">
+            <svg class="m-t-7 m-r-10 va-middle" width="138" height="41">
+                <use href="./dist/image.svg#amazon"></use>
+            </svg>
+            <svg class="m-t-7 m-r-10 va-middle" width="89" height="44">
+                <use href="./dist/image.svg#etsy"></use>
+            </svg>
+            <svg class="m-t-7 m-r-10 va-middle" width="153" height="29">
+                <use href="./dist/image.svg#clickbank"></use>
+            </svg>
+            <svg class="m-t-7 m-r-10 va-middle" width="59" height="50">
+                <use href="./dist/image.svg#N"></use>
+            </svg>
+            <svg class="m-t-7 m-r-10 va-middle" width="139" height="31">
+                <use href="./dist/image.svg#youtube"></use>
+            </svg>
+            <svg class="m-t-7 va-middle" width="227" height="27">
+                <use href="./dist/image.svg#kickstarter"></use>
+            </svg>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
-            <p class="paragraph-md footer-heading">© 2018 autocryp All Right Reserved</p>
-            <nav class="footer-nav">
+            <p class="footer__copyright">&copy; 2022 Autocryp All Right Reserved</p>
+            <nav class="footer__nav">
                 <ul>
-                    <li class="paragraph-md footer-links nav-links">Benefit</li>
-                    <li class="paragraph-md footer-links nav-links"> Pricing</li>
-                    <li class="paragraph-md footer-links nav-links">Testimonials</li>
-                    <li class="paragraph-md footer-links nav-links">Clients</li>
+                    <li><a href="#benefit" class="link">Benefit</a></li>
+                    <li><a href="#pricing" class="link">Pricing</a></li>
+                    <li><a href="#splide" class="link">Testimonials</a></li>
+                    <li><a href="#client" class="link">Clients</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <div class="overlay" id="mobile-menu">
+        <div class="overlay__closeBtn">
+            <a onclick="toggleNav(open=false)" class="link">&times;</a>
+        </div>
+        <ul class="overlay__nav">
+            <li><a href="javascript:void(0)" class="link">Benefit</a></li>
+            <li><a href="javascript:void(0)" class="link">Pricing</a></li>
+            <li><a href="javascript:void(0)" class="link">Testimonials</a></li>
+            <li class="border-bottom"><a href="javascript:void(0)" class="link">Client</a></li>
+            <!-- <hr /> -->
+            <li><a href="javascript:void(0)" onclick="toggleNav(open=false)" class="link">Login</a></li>
+            <li><a href="javascript:void(0)" id="mobileRegisterButton" class="btn btn--sm">Register</a></li>
+        </ul>
+    </div>
+
+    <div class="modelbox" id="modelbox">
+        <div class="modelbox__con">
+            <div class="modelbox__closeBtn">
+                <a onclick="closeModel()" class="link">&times;</a>
+            </div>
+            <p class="heading font-24 modelbox__heading">Get Started</p>
+            <p class="modelbox__smallText">register in 1 minute</p>
+            <form action="/autocrypt/" class="modelbox__form">
+                <div class="field">
+                    <input class="field__input" type="text" placeholder="Enter your name" minlength="3" required
+                        id="name-input" autocomplete="off">
+                    <label for="Name" class="field__label">Name</label>
+                </div>
+                <div class="field">
+                    <input class="field__input" type="email" placeholder="eg. bob@gmail.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required id="email-input" autocomplete="off">
+                    <label for="email" class="field__label">Email</label>
+                </div>
+                <div class="field field--password">
+                    <input class="field__input" type="password" placeholder="Enter your password" minlength="5" required
+                        id="passwordField" autocomplete="off">
+                    <label for="password" class="field__label">Password</label>
+                    <svg class="field__showPassword" id="showPassword">
+                        <use href="./dist/image.svg#eye-solid" width="20" height="20" id="showPasswordIcon"></use>
+                    </svg>
+
+                </div>
+                <input class="btn btn--sm modelbox__submitBtn" type="submit" value="Sign up">
+            </form>
+            <p>Already a member <a href="javascript:void(0)" class="modelbox__login">Log in here</a></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script src="./dist/script.js"></script>
 </body>
 
 </html>
